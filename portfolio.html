@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="'https://fonts.googleapis.com/css?family=Poppins'">
+<style>
+    *{
+        margin:0;
+        padding:0;
+    }
+    body{
+        background-color: #dadcd7;
+        font-family: "pippins",sans-serif;
+    }
+    nav{
+        display:flex;
+        justify-content: space-around;
+        align-items: center;
+        color:rgb(2, 2, 2);
+        height: 80px;
+        background-color: #a7aba5;
+    }
+    nav ul{
+        display: flex;
+        justify-content: center;
+       
+    }
+   
+    nav ul li{
+        list-style:none;
+        margin:14px;
+    }
+
+    nav ul li:hover{
+        cursor: pointer;
+    }
+
+    .right ul a{
+       text-decoration: none;
+       color: black;
+    }
+
+
+    .left{
+        font-size:25px;
+       font-weight:400;
+       color: rgb(11, 5, 16);
+    }
+   
+    .firstsection{
+       background-color: none;
+       display:flex;
+       justify-content: space-around;
+       align-items: center;
+       margin:80px 0px;
+    }
+    .firstsecton > div{
+        width:30%;
+    }
+
+    .firstsection .left{
+    font-size:3rem;
+    background: none;
+   color:rgb(6, 6, 6);
+   font-weight: 80;
+   
+    }
+    .firstsection .right{
+   background-color: none;
+   width: 400px;
+   height:400px
+   
+    }
+.firstsection .right img{
+    width: 100%;
+    border-radius:10px;
+    box-shadow: 4px 4px 4px #9ea0a6; 
+    transition:transform 0.6s ease-in-out;
+}
+.firstsection .right img :hover{
+transform: scale(1.1);
+}
+
+.secondsection{
+    display: flex;
+    flex-direction: column;
+    
+    width: 100%;
+    height: 80vh;
+    background-color: none;
+    }
+.secondsection .box{
+    margin: 30px;
+    height: 50%;
+    width: 1px;
+    background-color: #276cc5;
+    position: absolute;
+    transform: translate(61px,0px);
+}
+.secondsection .horizontal{
+    position: absolute;
+    transform: translate(90px,550px);
+    width: 80%;
+    height: 1px;
+    background-color: #276cc5;
+} 
+.secondsection .boxforIntern{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: max-content;
+    height: max-content;
+    transform: translate(50px,500px);
+
+}
+.secondsection .boxforIntern .internship {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  font-size: 12px;
+  font-weight: 200;
+  position: absolute;
+  transform: translate(35px,-70px);
+  background-color: none;
+  color: rgb(96, 74, 47);
+}
+
+.secondsection .description {
+        position: absolute;
+        transform: translate(260px,50px);
+}
+.secondsection .description .blue{
+    color: #09428c;
+    margin-bottom: 5px;
+}
+.secondsection .description .gray h1{
+    font-size: 50px;
+    font-weight: 200;
+}
+.secondsection .description .workexp h2 {
+    font-weight:100;
+    color: #343274;
+    margin-top:35px;
+    margin-left: 35px;
+}    
+.secondsection .description .workexp h2 .first-div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+.secondsection .description .workexp h2 .sec-div{
+    margin-top:10px;
+    
+}
+    
+</style>
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                Danish's Portfolio
+            </div>
+            
+            <div class="right">
+                <ul >
+                    <a href=""><li>home</li></a>
+                    <a href=""><li>about</li></a>
+                    <a href=""><li>services</li></a>
+                    <a href=""> <li>projects</li></a>
+                    <a href=""><li>contact me</li></a>
+                </ul>
+                
+            </div>
+        </nav>
+</header>
+
+    <main>
+        <section class="firstsection">
+            <div class="left">
+                Hiii , My name is <span style="color: rgb(53, 54, 141);">Danish</span>
+                
+                <div>And I am a <div>passionate web</div> <div style="color:rgb(53, 54, 141)">Developer</div></div>
+                
+                <span style="color: #09428c;"id="element"></span>
+            </div>
+            <div class="right">
+                <img src="my.jpeg" alt="">
+        </div>
+        </section>
+  
+        <section class="secondsection">
+            <div class="boxforIntern"><div class="internship">INTERNSHIP</div></div>
+           <div class="box"></div>
+           <div class="horizontal"></div>
+           <div class="description">
+                <div class="blue">what I have achieved so far,,</div>
+                <div class="gray"><h1>Full Stack Web Developer!</h1></div>
+                <div class="workexp">
+                    <h2>
+                        <p>
+                            I have learned <span style="color:#0c2341">JavaScript</span>, HTML, and CSS. As a fresher,
+                            <div class="first-div"> I understand that there is still a lot </div>for me to learn. Currently, 
+                            <div class="sec-div">
+                                I am focusing on learning React.js to further enhance my front-end development skills.
+                            </div>
+                        </p>
+                    </h2>
+                </div>
+           </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script> 
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['react developer', 'And life long learner!!'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
